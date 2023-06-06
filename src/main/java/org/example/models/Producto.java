@@ -5,9 +5,9 @@ import org.example.JsonAtributo;
 import java.time.LocalDate;
 
 public class Producto {
-    @JsonAtributo
+    @JsonAtributo(capitalizar = true)
     private String nombre;
-    @JsonAtributo
+    @JsonAtributo(nombre = "costo")
     private Long precio;
 
     private LocalDate fecha;
